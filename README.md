@@ -1,29 +1,31 @@
 
 
-== Project Idea:
+# Project Idea:
 Superhuman Registration Act. Building this website to register all Marvel's heroes. Including
 their personal identity infomation, affiliations and the movie they attend. After sign in, user could use 'pay attention to' function to follow the guy who may want to do some big things:)
-== How to run the test suite
+
+# How to run the test suite
 
 To run on local system using web browser (localhost:3000), clone the repository to desktop, run bundle install –without production, rake db:migrate, rake db:seed.
 
-== Database creation
+# Database creation
+
 * Many-to-many model association: Users and Hero through Attention
 
-=== User 
+### User 
 	* Review all heroes and inspect some of them.
-=== Hero
+### Hero
 	* Including all heroes' identity info
-=== Affiliations
+### Affiliations
 	* The affiliations just like revengers
-=== Movie
+### Movie
 	* Movie they attent
-=== Attention
+### Attention
 	* Inspect the heores
 
 
-== Ruby version
-	Ruby 4.2.6
+# Ruby version
+	* Ruby 4.2.6
 
 
 
