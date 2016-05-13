@@ -1,27 +1,30 @@
-== README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+== Project Idea:
+Superhuman Registration Act. Building this website to register all Marvel's heroes. Including
+their personal identity infomation, affiliations and the movie they attend. After sign in, user could use 'pay attention to' function to follow the guy who may want to do some big things:)
+== How to run the test suite
 
-* Ruby version
+To run on local system using web browser (localhost:3000), clone the repository to desktop, run bundle install –without production, rake db:migrate, rake db:seed.
 
-* System dependencies
+== Database creation
+* Many-to-many model association: Users and Hero through Attention
 
-* Configuration
+=== User 
+	* Review all heroes and inspect some of them.
+=== Hero
+	* Including all heroes' identity info
+=== Affiliations
+	* The affiliations just like revengers
+=== Movie
+	* Movie they attent
+=== Attention
+	* Inspect the heores
 
-* Database creation
 
-* Database initialization
+== Ruby version
+	Ruby 4.2.6
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 
 
 Please feel free to use a different markup language if you do not plan to run
