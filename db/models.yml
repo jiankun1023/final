@@ -1,29 +1,29 @@
 User
-	name: text
-	email: text
-	password: text
+  name: text
+  email: text
+  password: text
 
 Hero
-	realname: text
-	photo_url: text
-	height: String
-	weight: String
-	powers: text
-	abilities: test
-	movie_id: integer
-	affiliations_id: integer
+  name: text
+  realname: text
+  photo_url: text
+  height: String
+  weight: String
+  powers: text
+  abilities: text
+  movie_id: integer
+  affiliations_id: integer
 
 Affiliations
-	name: text
+  tag: text
 
 Movie
-	title: text
-	image_url: text
-
+  title: text
+  image_url: text
 
 Attention
-	user_id: integer
-	hero_id: integer
+  user_id: integer
+  hero_id: integer
 
 
 # Example table for a typical Book model.
@@ -62,4 +62,3 @@ Attention
 # Complete details are in the README file online.
 #
 # Have fun!
-

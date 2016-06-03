@@ -1,0 +1,24 @@
+<h1>Superhuam List</h1>
+
+<p><%= link_to 'Add A New SuperMan', '/heroes/new' %></p>
+
+<table class="table table-striped">
+
+  <tr>
+    <th>Name</th>
+    <th>RealName</th>
+    <th>Height</th>
+    <th>Weight</th>
+    <!-- <th>Edit</th>
+    <th>Delete</th> -->
+  </tr>
+  <% @heroes.each do |hero| %>
+  <tr>
+    <td><%= link_to hero.name, hero_url(hero.id) %></td>
+    <td><%= hero.realname%></td>
+    <td><%= hero.height %></td>
+    <td><%= hero.weight %></td>
+  </tr>
+  <% end %>
+
+</table>

@@ -13,4 +13,30 @@
 
 ActiveRecord::Schema.define(version: 0) do
 
+  create_table "affiliations", force: :cascade do |t|
+    t.text "tag"
+  end
+
+  create_table "attentions", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "hero_id"
+  end
+
+  add_index "attentions", ["hero_id"], name: "index_attentions_on_hero_id"
+  add_index "attentions", ["user_id"], name: "index_attentions_on_user_id"
+
+# Could not dump table "heros" because of following NoMethodError
+#   undefined method `[]' for nil:NilClass
+
+  create_table "movies", force: :cascade do |t|
+    t.text "title"
+    t.text "image_url"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.text "name"
+    t.text "email"
+    t.text "password"
+  end
+
 end

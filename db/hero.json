@@ -1,0 +1,120 @@
+/*Hero
+  name: text
+  realname: text
+  photo_url: text
+  height: String
+  weight: String
+  powers: text
+  abilities: text
+  movie_id: integer
+  affiliations_id: integer*/
+[
+  {
+    "name" : "IRON MAN",
+    "realname" : "Anthony Edward Tony Stark",
+    "photo_url" : "https://upload.wikimedia.org/wikipedia/en/e/e0/Iron_Man_bleeding_edge.jpg",
+    "height" : "6'1",
+    "weight" : "225 lbs",
+    "powers" : "None; Tony's body had been enhanced by the modified techno-organic virus, Extremis, but it is currently inaccessible and inoperable.",
+    "abilities" : "Tony has a genius level intellect that allows him to invent a wide range of sophisticated devices, specializing in advanced weapons and armor. He possesses a keen business mind."
+  },
+  {
+    "name" : "CAPTAIN AMERICA",
+    "realname" : "Steve Rogers",
+    "photo_url" : "https://upload.wikimedia.org/wikipedia/en/9/91/CaptainAmerica109.jpg",
+    "height" : "6'2",
+    "weight" : "220 lbs",
+    "powers" : "Captain America represented the pinnacle of human physical perfection. He experienced a time when he was augmented to superhuman levels, but generally performed just below superhuman levels for most of his career.",
+    "abilities" : " Captain America had mastered the martial arts of American-style boxing and judo, and had combined these disciplines with his own unique hand-to-hand style of combat. He had also shown skill and knowledge of a number of other martial arts."
+  },
+  {
+    "name" : "SPIDER-MAN",
+    "realname" : "Peter Benjamin Parker",
+    "photo_url" : "https://upload.wikimedia.org/wikipedia/en/0/0c/Spiderman50.jpg",
+    "height" : "5'10",
+    "weight" : "167 lbs",
+    "powers" : "Peter can cling to most surfaces, has superhuman strength (able to lift 10 tons optimally) and is roughly 15 times more agile than a regular human. The combination of his acrobatic leaps and web-slinging enables him to travel rapidly from place to place. His spider-sense provides an early warning detection system linked with his superhuman kinesthetics, enabling him the ability to evade most any injury, provided he doesn't cognitively override the autonomic reflexes. ",
+    "abilities" : "Peter is an accomplished scientist, inventor and photographer."
+  },
+  {
+    "name" : "THOR",
+    "realname" : "Thor Odinson",
+    "photo_url" : "https://upload.wikimedia.org/wikipedia/commons/c/c5/Mårten_Eskil_Winge_-_Tor%27s_Fight_with_the_Giants_-_Google_Art_Project.jpg",
+    "height" : "6'6",
+    "weight" : "640 lbs",
+    "powers" : "As the son of Odin and Gaea, Thor's strength, endurance and resistance to injury are greater than the vast majority of his superhuman race. He is extremely long-lived (though not completely immune to aging), immune to conventional disease and highly resistant to injury. His flesh and bones are several times denser than a human's.As Lord of Asgard, Thor possessed the Odinforce, which enabled him to tap into the near-infinite resources of cosmic and mystical energies, enhancing all of his abilities. With the vast magical power of the Odinforce, Thor was even able to dent Captain America’s virtually indestructible shield with Mjolnir.",
+    "abilities" : "Thor is trained in the arts of war, being a superbly skilled warrior, highly proficient in hand-to-hand combat, swordsmanship and hammer throwing."
+  },
+  {
+    "name" : "BLACK WIDOW",
+    "realname" : "Natasha Romanova",
+    "photo_url" : "http://vignette3.wikia.nocookie.net/marvelmovies/images/7/79/207_741.jpg/revision/latest?cb=20131127043932",
+    "height" : "Secret",
+    "weight" : "Secret",
+    "powers" : "Natasha Romanova, known by many aliases, is an expert spy, athlete, and assassin. Trained at a young age by the KGB's infamous Red Room Academy, the Black Widow was formerly an enemy to the Avengers.",
+    "abilities" : "Secret"
+  },
+  {
+    "name" : "DAREDEVIL",
+    "realname" : "Matthew Michael Murdock",
+    "photo_url" : "https://upload.wikimedia.org/wikipedia/en/1/14/Daredevil_65.jpg",
+    "height" : "6'0",
+    "weight" : "200 lbs",
+    "powers" : "In compensation for his lost sight, Daredevil’s other four senses have been preternaturally enhanced.His sense of touch is sensitive enough to detect the faint impressions of ink on paper, allowing him to read by touch. He is also able to feel minute changes in temperature and pressure, enough to sense a human body at a distance of five feet, due to body heat and air disturbance. His sensitivity to heat allows him to sense the temperature of people and objects in order to determine whether a person is alive, how long they have been dead if they are not, and other changes in body temperature such as blushing or the heating up associated with various emotional states, as well as residual body heat on an object, or how recently a machine has been in use.Daredevil’s sense of smell is enhanced enough to distinguish individuals by their natural odors, and remember and identify them no matter how they attempt to mask their scent, as well as track that individual scent through a crowd of people at a distance of roughly 50 feet.His sense of taste is sharp enough to enable him to detect the number of grains of salt on a pretzel. His ability to remember tastes enables him to determine every ingredient of a food or drink he tastes, as long as there are at least 20 milligrams of that substance present.Daredevil’s enhanced sense of hearing enables him to detect an acoustic pressure change of 1 decibel at a pressure level of 7, whereas the average human can only detect a sound as low as 20 decibels. He can even hear people speaking through a standard soundproofed wall. Daredevil is also able to hear a heartbeat from 20 feet away, as well as identify people by their individual beat rhythm, or detect whether they are lying or not by the changes in their heartbeat, though a pace maker or self control will confuse his reading. Not only does Daredevil’s hearing allow him to be constantly aware of his own heartbeat, blood circulation, breathing, physical movements, etc, but he is also able to hear and sense the same attributes in other people.",
+    "abilities" : " Daredevil possesses the strength, speed, agility, and endurance, not to mention acrobatic and gymnastic skills, of an Olympic-level athlete. Through a combination of the tutelage of Stick and self-training, Daredevil is a master of a unique martial art form, which is a hybridized form of American boxing and the Japanese arts of ninjutsu, judo and aiki-jujutsu. Martial arts training has given him an immense degree of concentration and personal control over his body and energy, or Ki. Daredevil is also an accomplished criminal trial lawyer."
+  },
+  {
+    "name" : "HULK",
+    "realname" : "Robert Bruce Banner",
+    "photo_url" : "https://upload.wikimedia.org/wikipedia/en/5/59/Hulk_%28comics_character%29.png",
+    "height" : "7' – 8'(green/savageHulk)",
+    "weight" : "1,040 – 1,400 lbs.(green/savage Hulk)",
+    "powers" : "The Hulk possesses an incredible level of superhuman physical ability. His capacity for physical strength is potentially limitless due to the fact that the Hulk's strength increases proportionally with his level of great emotional stress, anger in particular. The Hulk uses his superhumanly strong leg muscles to leap great distances. The Hulk has been known to cover hundreds of miles in a single bound and once leaped almost into orbit around the Earth. The Hulk can also use his superhumanly leg muscles to run at super speeds, although his legs have limitless strength he does not have limitless speed and once he reaches a certain speed his legs become too strong and destroy the ground giving him no friction to run on, therefore he jumps to travel. The Hulk can slam his hands together creating a shock wave, this shock wave can deafen people, send objects flying and extinguish fires. His thunderclap has been compared to hurricanes and sonic booms. The Hulk has shown a high resistance to physical damage nearly regardless of the cause, and has also shown resistance to extreme temperatures, mind control, nuclear explosions, poisons, and all diseases. In addition to the regeneration of limbs, vital organs, and damaged or destroyed areas of tissue at an amazing rate. The Hulk also has superhuman endurance.The Hulk's body also has a gland that makes an oxygenated per fluorocarbon emulsion, which creates pressure in the Hulk's lungs and effectively lets him breathe underwater and move quickly between varying depths without concerns about decompression or nitrogen narcosis.",
+    "abilities" : "Dr. Bruce Banner is a genius in nuclear physics, possessing a mind so brilliant that it cannot be measured on any known intelligence test. When Banner is the Hulk, Banner's consciousness is buried within the Hulk's, and can influence the Hulk's behavior only to a very limited extent."
+  },
+  {
+    "name" : "WOLVERINE",
+    "realname" : "James Howlett",
+    "photo_url" : "https://upload.wikimedia.org/wikipedia/en/c/c8/Marvelwolverine.jpg",
+    "height" : "5'3",
+    "weight" : "(with Adamantium skeleton) 300 lbs",
+    "powers" : "Wolverine is a mutant who possesses the ability to regenerate damaged or destroyed areas of his cellular structure at a rate far greater than that of an ordinary human. The speed at which this healing factor works varies in direct proportion with the severity of the damage Wolverine suffers. For example, he can fully recover from an ordinary gunshot wound in a non-vital area of his body within minutes, but it took him almost two months to fully recover from injuries sustained in a duel with Lord Shingen, which included one from a sword that went all the way through his trunk.Wolverine’s natural healing also affords him virtual immunity to poisons and most drugs, as well as an enhanced resistance to diseases. For example, it is nearly impossible for him to become intoxicated from drinking alcohol. He also has a limited immunity to the fatigue poisons generated by bodily activity, and hence he has greater endurance than an ordinary human. His agility and reflexes are similarly enhanced.In addition, Wolverine’s healing factor provides him with an extended lifespan by slowing the effects of the aging process.",
+    "abilities" : "Due to his extensive training as a soldier, a C.I.A. operative, a samurai, a spy, and a member of the X-Men, Wolverine is an exceptional hand-to-hand combatant, having mastered virtually every fighting style on Earth. He is also a trained expert in multiple types of weapons, vehicles, computer systems, explosives, and assassination techniques. Wolverine is fluent in many languages, including Japanese, Russian, Chinese, Cheyenne, Lakota, and Spanish; he has some knowledge of French, Thai, and Vietnamese."
+  },
+  {
+    "name" : "WINTER SOLDIER",
+    "realname" : "James Buchanan Barnes",
+    "photo_url" : "https://upload.wikimedia.org/wikipedia/en/a/a2/Bucky.PNG",
+    "height" : "5'9",
+    "weight" : "260 lbs",
+    "powers" : "None",
+    "abilities" : "He is an Olympic-class athlete and expectional acrobat highly skilled in both unarmed and armed hand-to-hand combat and extremely accurate marksman. he is fluent in four languages including German and Russian."
+  },
+  {
+    "name" : "BLACK PANTHER",
+    "realname" : "T'Challa",
+    "photo_url" : "https://upload.wikimedia.org/wikipedia/en/5/59/Jungleaction23.png",
+    "height" : "6'",
+    "weight" : "200 lbs",
+    "powers" : "T'Challa's senses and physical attributes have been enhanced to superhuman levels by the heart-shaped herb.",
+    "abilities" : "T'Challa is a brilliant tactician, strategist, scientist, tracker and a master of all forms of unarmed combat whose unique hybrid fighting style incorporates acrobatics and aspects of animal mimicry. T'Challa being a royal descendent of a warrior race is also a master of armed combat, able to use a variety of weapons but prefers unarmed combat. He is a master planner who always thinks several steps ahead and will go to extreme measures to achieve his goals and protect the kingdom of Wakanda."
+  },
+  {
+    "name" : "HAWKEYE",
+    "realname" : "Clinton Francis Clint Barton",
+    "photo_url" : "https://upload.wikimedia.org/wikipedia/en/7/72/H-5.jpg",
+    "height" : "6'3",
+    "weight" : "230 lbs",
+    "powers" : "None. As Goliath, Barton used gases designed by Hank Pym to grow to great heights, with appropriate increases in strength and toughness. (He could also use them to shrink to minuscule size.)",
+    "abilities" :"Ronin is a world-class archer and marksman. His above average reflexes and hand-eye-coordination make him the most proficient archer ever known. He is also trained to throw knifes, darts, balls, bolas and boomerangs. He is natural athlete. He is also formidable unarmed combatant, thanks largely for longtime combat training with Captain America. He also has extensive training as an acrobat and aerialist. He is highly capable and charismatic team leader and a shrewd combat strategist, albeit sometimes reckless. Barton is also talented weapon designer, particularly well-versed in variations on basic traditional weaponry such as arrows, blades and hand-thrown projectiles. He has designed and crafted crescent darts, boomerangs, throwing irons, bolas, axes, custom arrows and bows. he is experienced motorcycle rider, Barton was one of the of the most proficient and daring pilots of the Avengers' supersonic Quinjets and other aircraft. He was once 80% deaf due to an injury, but his hearing was restored during his rebirth on Franklin Richards' Counter-Earth."
+  },
+  {
+    "name" : "RONAN",
+    "realname" : "Ronan",
+    "photo_url" : "https://upload.wikimedia.org/wikipedia/en/8/80/RonantheAccuser.jpg",
+    "height" : "7'5",
+    "weight" : "480 lbs",
+    "powers" : "Can currently adapt his body to survive any hostile environment. Strength-enhancing armor. Generate cold to put certain lifeforms into suspended animation. Render himself 'invisible'.",
+    "abilities" : "Can currently adapt his body to survive any hostile environment. Strength-enhancing armor. Generate cold to put certain lifeforms into suspended animation. Render himself 'invisible'."
+  }
+]

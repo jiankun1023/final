@@ -1,0 +1,50 @@
+[
+ {
+   "name" : "IRON MAN",
+   "tag" : "Avengers"
+ },
+ {
+    "name" : "CAPTAIN AMERICA",
+    "tag" : "Secret Avengers"
+ },
+ {
+   "name" : "SPIDER-MAN",
+   "tag" : "Avengers"
+ },
+ {
+   "name" : "THOR",
+   "tag" : "Avengers"
+ },
+ {
+   "name" : "BLACK WIDOW",
+   "tag" : "Avengers"
+ },
+ {
+   "name" : "DAREDEVIL",
+   "tag" : "Marvel Knights"
+ },
+ {
+   "name" : "HULK",
+   "tag" : "Avengers"
+ },
+ {
+   "name" : "WOLVERINE",
+   "tag" : "X-Men"
+ },
+ {
+   "name" : "WINTER SOLDIER",
+   "tag" : "Avengers"
+ },
+ {
+   "name" : "BLACK PANTHER",
+   "name" : "Secret Avengers"
+ },
+ {
+   "name" : "HAWKEYE",
+   "tag" : "Avengers"
+ },
+ {
+   "name" : "RONAN",
+   "tag" : "Starforce"
+ }
+]
