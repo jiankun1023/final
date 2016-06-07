@@ -1,4 +1,3 @@
-<h1>Superhuam List</h1>
 
 <p><%= link_to 'Add A New SuperMan', '/heroes/new' %></p>
 
@@ -9,8 +8,10 @@
     <th>RealName</th>
     <th>Height</th>
     <th>Weight</th>
-    <!-- <th>Edit</th>
-    <th>Delete</th> -->
+    <th>Movie</th>
+    <th>Affiliations</th>
+    <th>Edit</th>
+    <th>Delete</th>
   </tr>
   <% @heroes.each do |hero| %>
   <tr>
@@ -18,6 +19,10 @@
     <td><%= hero.realname%></td>
     <td><%= hero.height %></td>
     <td><%= hero.weight %></td>
+    <td><%= Movie.find_by(id: hero.movie_id).title %></td> 
+    <td><%= Affiliations.find_by(id: hero.affiliations_id).tag %></td>
+    <td><%= link_to 'Edit', "/heroes/#{hero.id}/edit" %></td>
+    <td><%= link_to 'Delete', "/heroes/#{hero.id}", :method => 'delete' %></td>
   </tr>
   <% end %>
 

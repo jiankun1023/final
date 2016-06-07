@@ -1,0 +1,15 @@
+
+<p><%= link_to 'Add A New Affiliations', '/affiliations/new' %></p>
+
+<table class="table table-striped">
+  <tr>
+    <th>Movie</th>
+    <th>Edit</th>
+  </tr>
+  <% @affiliations.each do |affiliation| %>
+    <tr>
+      <td><%= link_to affiliation.tag, affiliation_url(affiliation.id) %></td>
+      <td><%= link_to 'Edit', "/affiliations/#{affiliation.id}/edit" %></td>
+    </tr>
+  <% end %>
+</table> 

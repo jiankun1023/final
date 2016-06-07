@@ -1,0 +1,25 @@
+
+<h4><%= link_to 'Change Password', "/users/change_password/#{@user.id}" %></h4> 
+
+<% if @user.id == session[:user_id].to_i %>
+   <p>Name: <%= @user.name %></p>
+   <p>Email: <%= @user.email %></p>
+   <p>Password: [HIDDEN]<%= @user.password %></p>
+ <% else %>
+ 
+ <h3>Nice Try.</h3>
+ 
+<% end %>
+
+
+<p>
+  <h3>Attentions: </h3>
+  <% if @user.heroes.present? %>
+    <% @user.heroes.each do |hero| %>
+      <%= link_to hero.name, "/heroes/#{hero.id}" %>
+      <h5><%= link_to 'Remove from Favorite', "/attentions/#{hero.id}/delete" %></h5>
+    <% end %>
+  <% else %>
+    <h6>  No favorite book. Please go to <%= link_to 'Heroes', '/heroes' %> to add some:) </h6>
+  <% end %>
+</p>

@@ -1,1 +1,54 @@
-<h1>New</h1>
+<h1>Add SuperMan</h1>
+
+
+<%= form_tag '/heroes' do %>
+
+  <p>
+    <%= label_tag 'Name: ' %>
+    <%= text_field_tag :name, "", size: 50 %>
+  </p>
+
+  <p>
+    <%= label_tag 'RealName: ' %>
+    <%= text_field_tag :realname %>
+  </p>
+
+  <p>
+    <%= label_tag 'Height: ' %>
+    <%= text_field_tag :height, "", size: 4 %>
+  </p>
+
+  <p>
+    <%= label_tag 'Weight: ' %>
+    <%= text_field_tag 'weight' %>
+  </p>
+
+  <p>
+    <%= label_tag 'movie_id' %>
+   <%= select_tag 'movie_id', options_from_collection_for_select(@movie, "id", "title") %>
+  </p>
+
+  <p>
+    <%= label_tag 'affiliations_id' %>
+    <%= select_tag 'affiliations_id', options_from_collection_for_select(@affiliations, "id", "tag") %>
+  </p>
+
+  <p>
+    <%= label_tag 'Photo: ' %>
+    <%= text_field_tag :photo_url, "", size: 100 %>
+  </p>
+
+  <p>
+    <%= label_tag 'Powers: ' %>
+    <%= text_area_tag :power, "", rows: 5, cols: 70 %>
+  </p>
+
+  <p>
+    <%= label_tag 'Abilities: ' %>
+    <%= text_area_tag :abilities, "", rows: 5, cols: 70 %>
+  </p>
+
+  <%= submit_tag 'Update' %>
+
+<% end %>
+

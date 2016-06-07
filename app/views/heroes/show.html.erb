@@ -7,4 +7,15 @@
     <p>Powers:<%= @hero.powers %></p>
     <br>
     <p>Abilities:<%= @hero.abilities %></p>
+    <%if session[:user_id].present? %>
+	    <% if Attention.find_by(hero_id: @hero.id).present? %>
+	    	<p><%= link_to 'Remove from Attention', "/attentions/#{@hero.id}/delete" %></p>
+	  	<% else %>
+	    	<p><%= link_to 'Add to Attention', "/attentions/#{@hero.id}/add " %></p>
+	  	<% end %>
+  	<%end%>
+
+    <h4>Movie: <%= Movie.find_by(id: @hero.movie_id).title %></h4>
+    <%= image_tag Movie.find_by(id: @hero.movie_id).image_url %>
+    <h4>Affiliation: <%= Affiliations.find_by(id: @hero.affiliations_id).tag %></h4>
 </div>

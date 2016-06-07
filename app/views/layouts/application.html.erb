@@ -7,8 +7,56 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="container"> 
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="/heroes">SuperHero</a>
+      </div>
 
-<%= yield %>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="negative"><%= link_to "Heroes", root_url %> <span class="sr-only">(current)</span></li>
+            <li class="negative"><%= link_to "Affiliations", affiliations_path %></li>
+
+            <form class="navbar-form navbar-left" role="search">
+                     <%= form_tag heroes_url, :class => "form-group",:method => 'get' do %>
+                     <%=  text_field_tag :keyword, "", :class=>"form-control"%>
+                      <%= submit_tag "Search", :class =>"btn btn-default" %>
+                    <% end %>
+            </form>
+           
+
+          </ul>
+          <ul class="nav navbar-nav pull-right">
+               <% if session["user_id"].present? %>
+                  <% current_user = User.find_by(id: session["user_id"]) %>
+                  <li class="active"> <%= "Hello," + current_user.name %></li>
+                   <li class="negative"><%= link_to " Home", user_path(current_user) %></li>
+                   <li class="negative"><%= link_to "Sign Out", logout_path %></li>
+               <% else %>
+                  <li class="negative"><%= link_to "Sign Up", new_user_path %></li>
+                  <li class="negative"><%= link_to "Sign In", login_path %></li>
+                <% end %> 
+          </ul>
+      </div>
+  </nav>
+
+    <br>
+    <br>
+    <br>
+    <% if notice.present? %>
+        <div class='alert alert-warning'>
+    <%= notice %>  
+        </div>
+    <% end %>
+    <%= yield %>
+</div>
 
 </body>
 </html>

@@ -1,7 +1,7 @@
 User
   name: text
   email: text
-  password: text
+  password_digest: text
 
 Hero
   name: text

@@ -21,16 +21,31 @@ hero_info.each do |hero_data|
 end
 
 movie_info.each do |movie_data|
-    movie = Movie.new
-    movie.title = movie_data['title']
-    movie.image_url = movie_data['image_url']
-    puts "movie.title"
+    movie = Movie.find_by(title: movie_data['title'])
+    if movie == nil
+        movie = Movie.new
+        movie.title = movie_data['title']
+        movie.image_url = movie_data['image_url']
+        movie.save
+    end
+    hero = Hero.find_by(name: movie_data['name'])
+    hero.movie = movie
+    puts "#{hero.movie} added"
+    hero.save
+  
 end
 
 affiliations_info.each do |affiliations_data|
-    affiliations = Affiliations.new
-    affiliations.tag = affiliations_data['tag']
-    puts "affiliations.tag"
+     affiliations = Affiliations.find_by(tag: affiliations_data['tag'])
+     if affiliations == nil
+        affiliations = Affiliations.new
+        affiliations.tag = affiliations_data['tag']
+        affiliations.save
+     end
+     hero = Hero.find_by(name: affiliations_data['name'])
+     hero.affiliations = affiliations
+     hero.save
+
 end
 
 

@@ -1,0 +1,40 @@
+<%= form_tag "/heroes/#{@hero.id}", :method => 'patch' do %>
+
+  <p>
+    <%= label_tag 'Name: ' %>
+    <%= text_field_tag :name, value = @hero.name, size: 50 %>
+  </p>
+
+  <p>
+    <%= label_tag 'RealName: ' %>
+    <%= text_field_tag :realname, value = @hero.realname%>
+  </p>
+
+  <p>
+    <%= label_tag 'Height: ' %>
+    <%= text_field_tag :height, value = @hero.height, size: 4 %>
+  </p>
+
+  <p>
+    <%= label_tag 'Weight: ' %>
+    <%= text_field_tag 'weight', value = @hero.weight%>
+  </p>
+
+  <p>
+    <%= label_tag 'Photo: ' %>
+    <%= text_field_tag :photo_url, value = @hero.photo_url, size: 100 %>
+  </p>
+
+  <p>
+    <%= label_tag 'Powers: ' %>
+    <%= text_area_tag :power, value = @hero.powers, rows: 5, cols: 70 %>
+  </p>
+
+  <p>
+    <%= label_tag 'Abilities: ' %>
+    <%= text_area_tag :abilities, value = @hero.abilities, rows: 5, cols: 70 %>
+  </p>
+
+  <%= submit_tag 'Update' %>
+
+<% end %>

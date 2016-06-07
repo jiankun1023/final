@@ -37,7 +37,7 @@
  },
  {
    "name" : "BLACK PANTHER",
-   "name" : "Secret Avengers"
+   "tag" : "Secret Avengers"
  },
  {
    "name" : "HAWKEYE",
@@ -45,6 +45,6 @@
  },
  {
    "name" : "RONAN",
-   "tag" : "Starforce"
+   "tag" : "No Affiliations"
  }
 ]

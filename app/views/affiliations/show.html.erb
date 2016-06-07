@@ -1,0 +1,6 @@
+<h1><%= @affiliations.tag%></h1>
+<h4>Heroes:</h4>
+
+<% @affiliations.heroes.each do |hero| %>
+	<li><h5><%= hero.name %></h5></li>
+<% end %>
