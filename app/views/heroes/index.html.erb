@@ -1,29 +1,14 @@
 
 <p><%= link_to 'Add A New SuperMan', '/heroes/new' %></p>
 
-<table class="table table-striped">
-
-  <tr>
-    <th>Name</th>
-    <th>RealName</th>
-    <th>Height</th>
-    <th>Weight</th>
-    <th>Movie</th>
-    <th>Affiliations</th>
-    <th>Edit</th>
-    <th>Delete</th>
-  </tr>
+<div class="row">
   <% @heroes.each do |hero| %>
-  <tr>
-    <td><%= link_to hero.name, hero_url(hero.id) %></td>
-    <td><%= hero.realname%></td>
-    <td><%= hero.height %></td>
-    <td><%= hero.weight %></td>
-    <td><%= Movie.find_by(id: hero.movie_id).title %></td> 
-    <td><%= Affiliations.find_by(id: hero.affiliations_id).tag %></td>
-    <td><%= link_to 'Edit', "/heroes/#{hero.id}/edit" %></td>
-    <td><%= link_to 'Delete', "/heroes/#{hero.id}", :method => 'delete' %></td>
-  </tr>
+  <div class="col-xs-6 col-md-3">
+     <span class="label label-default"><%= link_to 'Edit', "/heroes/#{hero.id}/edit",  {style: "color: white"} %></span>
+     <span class="label label-danger"><%= link_to 'Delete', "/heroes/#{hero.id}", style: "color: white" ,:method => 'delete' %></span>
+    <%= link_to hero_url(hero.id) do %>
+    <%=image_tag hero.photo_url, :class=>"thumbnail" ,height: '250', width: '250'%>
+    <%end%>
+  </div>
   <% end %>
-
-</table>
+</div>

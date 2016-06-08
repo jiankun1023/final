@@ -1,17 +1,17 @@
-<%= form_tag "/users/change_password/#{@user.id}", :method => 'patch' do %>
+<%= form_tag "/users/change_password/#{@user.id}", :method => 'patch', :class=>"form" do %>
   
-  <p>
+  <div class="form-group">
     <%= label_tag :old_password %>
-    <%= password_field_tag :old_password %>
-  </p>
-  <p>
+    <%= password_field_tag :old_password, "",:class => "form-control" %>
+  <div>
+  <div class="form-group">
     <%= label_tag :new_password %>
-    <%= password_field_tag :new_password %>
-  </p>
-  <p>
+    <%= password_field_tag :new_password, "" ,:class => "form-control" %>
+  </div>
+  <div class="form-group">
     <%= label_tag :confirm_password %>
-    <%= password_field_tag :confirm_password %>
-  </p>
+    <%= password_field_tag :confirm_password, "",:class => "form-control" %>
+  </div>
 
   <%= submit_tag 'Update' %>
 
