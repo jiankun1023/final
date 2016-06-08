@@ -1,23 +1,67 @@
 <div class="page-header">
     <h1><%= @hero.name%></h1>
-<div>
-<br>
-<div>
-    <%= image_tag @hero.photo_url %>
-    <h4>Realname: <%= @hero.realname%></h4>
-    <br>
-    <p>Powers:<%= @hero.powers %></p>
-    <br>
-    <p>Abilities:<%= @hero.abilities %></p>
-    <%if session[:user_id].present? %>
-	    <% if Attention.find_by(hero_id: @hero.id).present? %>
-	    	<p><%= link_to 'Remove from Attention', "/attentions/#{@hero.id}/delete" %></p>
-	  	<% else %>
-	    	<p><%= link_to 'Add to Attention', "/attentions/#{@hero.id}/add " %></p>
-	  	<% end %>
-  	<%end%>
-
-    <h4>Movie: <%= Movie.find_by(id: @hero.movie_id).title %></h4>
-    <%= image_tag Movie.find_by(id: @hero.movie_id).image_url %>
-    <h4>Affiliation: <%= Affiliations.find_by(id: @hero.affiliations_id).tag %></h4>
+     <%if session[:user_id].present? %>
+        <% if Attention.find_by(hero_id: @hero.id).present? %>
+            <p><%= link_to 'Remove from Attention', "/attentions/#{@hero.id}/delete" %></p>
+        <% else %>
+            <p><%= link_to 'Add to Attention', "/attentions/#{@hero.id}/add " %></p>
+        <% end %>
+    <%end%>
 </div>
+<br>
+
+  <%= image_tag @hero.photo_url,height: '700', width: '500', :class=>"img-circle" %>
+<br>
+<br>
+<br>
+<div class="panel panel-info">
+    <div class="panel-heading">Basic Info</div>
+        <div class="panel-body">
+        <p>The following table is the basic info of hero</p>
+    </div>
+
+  <table class="table table-striped">
+  <tr>
+    <th>RealName</th>
+    <th>Height</th>
+    <th>Weight</th>
+    <th>Affiliations</th>
+  </tr>
+  <tr>
+    <td><%= @hero.realname%></td>
+    <td><%= @hero.height %></td>
+    <td><%= @hero.weight %></td>
+    <td><%= Affiliations.find_by(id: @hero.affiliations_id).tag %></td>
+  </tr>
+  </table>
+</div>
+
+
+    <br>
+    <div class="panel panel-info">
+        <div class="panel-heading">Powers</div>
+        <div class="panel-body">
+            <p><%= @hero.powers %></p>
+        </div>
+    </div>
+    <br>
+
+    <br>
+    <div class="panel panel-info">
+        <div class="panel-heading">Abilities</div>
+        <div class="panel-body">
+            <p><%= @hero.abilities %></p>
+        </div>
+    </div>
+    <br>
+    <div class="panel panel-info">
+        <div class="panel-heading">Movie: <%= Movie.find_by(id: @hero.movie_id).title %></div>
+        <div class="panel-body">
+            <p><%= image_tag Movie.find_by(id: @hero.movie_id).image_url %></p>
+        </div>
+    </div>
+    <br>
+   
+
+    
+    
