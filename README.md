@@ -1,4 +1,4 @@
-You can view this website through public key: https://stark-ridge-30136.herokuapp.com/
+You can view this website through public URL: https://stark-ridge-30136.herokuapp.com/
 
 # Project Idea:
 Superhuman Registration Act. Building this website to register all Marvel's heroes. Including
