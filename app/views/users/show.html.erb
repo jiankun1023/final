@@ -1,14 +1,9 @@
 
-<h4><%= link_to 'Change Password', "/users/change_password/#{@user.id}" %></h4> 
 
 <% if @user.id == session[:user_id].to_i %>
-   <p>Name: <%= @user.name %></p>
-   <p>Email: <%= @user.email %></p>
-   <p>Password: [HIDDEN]<%= @user.password %></p>
- <% else %>
- 
- <h3>Nice Try.</h3>
- 
+   <h1>Hello,  <%= @user.name %></h1>
+   <h3>Email: <%= @user.email %></h3>
+   <h3>Password: [HIDDEN]<%= @user.password %> <%= link_to 'Change Password', "/users/change_password/#{@user.id}" , :class=>"btn btn-default btn-sm"%> </h3>
 <% end %>
 
 
@@ -23,3 +18,4 @@
     <h6>  No favorite book. Please go to <%= link_to 'Heroes', '/heroes' %> to add some:) </h6>
   <% end %>
 </p>
+
